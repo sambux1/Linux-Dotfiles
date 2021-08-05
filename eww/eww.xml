@@ -1,0 +1,35 @@
+<eww>
+    <includes>
+        <file path="./banano/banano.xml"/>
+        <file path="./lichess/lichess.xml"/>
+        <file path="./exercise/exercise.xml"/>
+    </includes>
+
+    <variables>
+        <script-var name="active_screen" interval="1s">
+            monitor_width=$(xrandr --current | grep "HDMI2" | awk '{print $3}' | cut -f1 -d "x")
+            x=$(xdotool getmouselocation | sed -E "s/ y:[^ ]* screen:0 window:[^ ]*|x://g")
+            if [ $x -lt $monitor_width ]; then
+                echo 1
+            else
+                echo 0
+            fi
+        </script-var>
+    </variables>
+
+    <windows>
+        <window name="lichess" stacking="bg" screen="1">
+            <geometry anchor="top left" x="300px" y="200px" width="300px" height="200px"/>
+            <widget>
+                <lichess/>
+            </widget>
+        </window>
+
+        <window name="exercise" stacking="bg" screen="1">
+            <geometry anchor="top left" x="1000px" y="1000px" width="300px" height="200px"/>
+            <widget>
+                <exercise/>
+            </widget>
+        </window>
+    </windows>
+</eww>

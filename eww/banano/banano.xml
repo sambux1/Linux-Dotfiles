@@ -1,0 +1,16 @@
+<eww>
+    <definitions>
+        <def name="banano">
+            <box>Monke</box>
+        </def>
+    </definitions>
+
+    <windows>
+        <window name="banano" stacking="fg" focusable="false" screen="1">
+            <geometry anchor="top left" x="300px" y="200px" width="300px" height="200px"/>
+            <widget>
+                <banano/>
+            </widget>
+        </window>
+    </windows>
+</eww>

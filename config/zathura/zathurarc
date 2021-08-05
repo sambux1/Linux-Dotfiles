@@ -1,0 +1,36 @@
+# the font for all text aside from the document
+set font                        "monospace normal 11"
+
+# background color
+set default-bg                  "#282828"
+
+# invert the colors, lightcolor is page color, darkcolor is text color
+set recolor                     "true"
+set recolor-lightcolor          "#282828"
+set recolor-darkcolor           "#d4be98"
+
+# the bar that displays the path to the current file and the page number
+set statusbar-bg                "#1d2021"   # bg0 from the 'hard' palette
+set statusbar-fg                "#d4be98"
+
+# the bar that appears when typing a command
+set inputbar-bg                 "#282828"
+set inputbar-fg                 "#d4be98"
+
+# the index screen
+set index-bg                    "#282828"
+set index-fg                    "#d4be98"
+set index-active-bg             "#7daea3"   # blue
+set index-active-fg             "#1d2021"   # bg0 from the 'hard' palette
+
+# general notifications
+set notification-bg             "#a9b665"   # green
+set notification-fg             "#1d2021"   # bg0 from the 'hard' palette
+
+# warning messages
+set notification-warning-bg     "#d8a657"   # yellow
+set notification-warning-fg     "#1d2021"   # bg0 from the 'hard' palette
+
+# error messages
+set notification-error-bg       "#ea6962"   # red
+set notification-error-fg       "#1d2021"   # bg0 from the 'hard' palette

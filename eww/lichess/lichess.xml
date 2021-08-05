@@ -1,0 +1,24 @@
+<eww>
+    <definitions>
+        <def name="lichess">
+            <box orientation="v" space-evenly="false">
+                <box orientation="h" height="150">
+                    <label class="lichess-rating" text="{{lichess_rating}}" />
+                    <button class="lichess-button" onclick="chromium" style="background-image: url('./lichess/logo.png');" 
+                            cursor="pointer" />
+                </box>
+                <box orientation="v">
+                    <label text="{{lichess_rating}} / {{round(lichess_rating / 200, 0) * 200 + 200}}" />
+                    <progress value="{{lichess_rating % 200 / 2}}"/>
+                </box>
+            </box>
+        </def>
+    </definitions>
+
+    <variables>
+        <script-var name="lichess_rating" interval="5m">
+            rating=$(curl https://lichess.org/api/user/sambux | grep -o -E "\"rapid\":{\"games\":[0-9]+,\"rating\":[0-9]+" | cut -f4 -d ":")
+            echo $rating
+        </script-var>
+    </variables>
+</eww>
