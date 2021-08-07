@@ -1,0 +1,44 @@
+# set color scheme to gruvbox-material
+colors:
+  primary:
+    background:   '#282828'
+    foreground:   '#d4be98'
+  
+  normal:
+    black:        '#3c3836'
+    red:          '#ea6962'
+    green:        '#a9b665'
+    yellow:       '#d8a657'
+    blue:         '#7daea3'
+    magenta:      '#d3869b'
+    cyan:         '#89b482'
+    white:        '#d4be98'
+  bright:
+    black:        '#3c3836'
+    red:          '#ea6962'
+    green:        '#a9b665'
+    yellow:       '#d8a657'
+    blue:         '#7daea3'
+    magenta:      '#d3869b'
+    cyan:         '#89b482'
+    white:        '#d4be98'
+
+# set the font to monospace 11
+font:
+  normal:
+    family: monospace
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+
+  size: 11

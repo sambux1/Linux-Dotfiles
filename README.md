@@ -11,7 +11,9 @@ Configuration files for my rice, soon to be found on `r/unixporn`.
 - [ ] zathura
     - [x] color scheme
     - [ ] keyboard shortcuts
-- [ ] terminal
-    - [ ] pick a better terminal than termite
+- [x] alacritty
+    - [x] set up alacritty
+    - [x] color scheme
 - [ ] bar
+    - [ ] decide which bar to use
 - [ ] xmonad
