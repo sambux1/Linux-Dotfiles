@@ -15,5 +15,8 @@ Configuration files for my rice, soon to be found on `r/unixporn`.
     - [x] set up alacritty
     - [x] color scheme
 - [ ] bar
-    - [ ] decide which bar to use
+    - [x] decide which bar to use (Polybar)
+    - [ ] left bar
+    - [x] center bar
+    - [ ] right bar
 - [ ] xmonad
